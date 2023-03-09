@@ -12,7 +12,7 @@ export const ContactUs = () => {
         const serviceId = "service_bjegmak"
         const templateId = "template_3e4qhl9";
         const apikey =  "xw-hXJ5kXw_eJ_sHI"
-
+        const regex = new RegExp()
         emailjs.sendForm(serviceId, templateId, refForm.current, apikey)
         .then( result => console.log(result.text))
         .catch (error => console.log(error))
